@@ -19,6 +19,7 @@ def my_sleep(sleeptime):
         time.sleep(1)
 ```
 
+#### result
 ```
 [+] Python function 'my_sleep' in the propeller
 Executed Item:    my_sleep(3)
@@ -45,6 +46,7 @@ my_propeller = Propeller(**kwargs)
 print(my_propeller.execute())
 ```
 
+#### result
 ```
 [+] shell command 'ls' in the propeller
 Executed Item:    ls
@@ -74,6 +76,7 @@ my_propeller = Propeller(**kwargs)
 print(my_propeller.execute())
 ```
 
+#### result
 ```
 [+] shell command 'sleep 1' in the propeller
 Executed Item:    sleep 1
