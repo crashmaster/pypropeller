@@ -14,12 +14,12 @@ def main():
     print(my_propeller.execute())
 
     kwargs = {"cmd": ["ls"],
-              "info": "Demo propeller with shell ls"}
+              "info": "Demo propeller with shell 'ls'"}
     my_propeller = Propeller(**kwargs)
     print(my_propeller.execute())
 
     kwargs = {"cmd": ["sleep", "1"],
-              "info": "Demo propeller with shell sleep and arguments"}
+              "info": "Demo propeller with shell 'sleep 1'"}
     my_propeller = Propeller(**kwargs)
     print(my_propeller.execute())
 
