@@ -9,17 +9,17 @@ from pypropeller import Propeller
 def main():
     kwargs = {"func": my_sleep,
               "args": [3],
-              "info": "Python function 'my_sleep' in the propeller"}
+              "info": "Execute Python function 'my_sleep' in the propeller"}
     my_propeller = Propeller(**kwargs)
     print(my_propeller.execute())
 
     kwargs = {"cmd": ["ls"],
-              "info": "shell command 'ls' in the propeller"}
+              "info": "Execute shell command 'ls' in the propeller"}
     my_propeller = Propeller(**kwargs)
     print(my_propeller.execute())
 
     kwargs = {"cmd": ["sleep", "1"],
-              "info": "shell command 'sleep 1' in the propeller"}
+              "info": "Execute shell command 'sleep 1' in the propeller"}
     my_propeller = Propeller(**kwargs)
     print(my_propeller.execute())
 
