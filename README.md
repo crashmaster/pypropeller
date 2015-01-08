@@ -2,7 +2,7 @@
 Rotating console propeller for running things in background.
 
 ## usage
-```
+```python
 from pypropeller import Propeller
 
 kwargs = {"cmd": ["ls"],
