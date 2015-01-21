@@ -18,8 +18,8 @@ def main():
     my_propeller = Propeller(**kwargs)
     print(my_propeller.execute())
 
-    kwargs = {"cmd": ["sleep", "1"],
-              "info": "Execute shell command 'sleep 1' in the propeller"}
+    kwargs = {"cmd": ["sleep", "3"],
+              "info": "Execute shell command 'sleep 3' in the propeller"}
     my_propeller = Propeller(**kwargs)
     print(my_propeller.execute())
 

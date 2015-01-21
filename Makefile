@@ -17,4 +17,5 @@ test:
 	@$(RUN_TESTS)
 
 build:
-	$(PYTHON3) setup.py sdist --dist-dir $(PACKAGE_DIR)
+	@$(PYTHON3) setup.py --quiet sdist --dist-dir $(PACKAGE_DIR)
+	@find $(PACKAGE_DIR) -name '*.tar.gz'
