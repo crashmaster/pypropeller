@@ -1,9 +1,11 @@
 """Console module for getting geometry or printing in color."""
 
+import os
 from fcntl import ioctl
 from struct import unpack
 from termios import TIOCGWINSZ
-import os
+
+import six
 
 
 def get_terminal_size():
@@ -67,7 +69,7 @@ def string_in_color(font_attr, bg_color, fg_color, *args):
         formatter.append(str(bg_color))
     if fg_color != CONSOLE_FONT_FG_COLOR["DEFAULT"]:
         formatter.append(str(fg_color))
-    return "\033[%sm%s\033[0m" % (';'.join(formatter),  ' '.join(args))
+    return "\033[%sm%s\033[0m" % (';'.join(formatter), ' '.join(args))
 
 
 def print_in_color(font_attr, bg_color, fg_color, *args):
@@ -80,4 +82,4 @@ def print_in_color(font_attr, bg_color, fg_color, *args):
         formatter.append(str(bg_color))
     if fg_color != CONSOLE_FONT_FG_COLOR["DEFAULT"]:
         formatter.append(str(fg_color))
-    print("\033[%sm%s\033[0m" % (';'.join(formatter), ' '.join(args)), end='')
+    six.print_("\033[%sm%s\033[0m" % (';'.join(formatter), ' '.join(args)), end='')

@@ -15,6 +15,8 @@ import subprocess
 import abc
 import datetime
 
+import six
+
 import console
 
 UNBUFFERED = os.fdopen(sys.stdout.fileno(), mode="wb", buffering=0)
@@ -82,7 +84,8 @@ class ExecInPropellerResult(object):
         return self.__result_attrs[ExecInPropellerResult.attributes[6][0]][1]
 
 
-class ExecInPropeller(metaclass=abc.ABCMeta):
+@six.add_metaclass(abc.ABCMeta)
+class ExecInPropeller(object):
     """
     The base class for the running execution in the propeller, keeps the
     state and outputs.
