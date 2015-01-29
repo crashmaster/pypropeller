@@ -16,13 +16,15 @@ RUN_TESTS_PY3 := PYTHONPATH=$(REPO_DIR)/pypropeller $(PYTHON3) $(TEST_DIR)/test_
 all: test
 
 test2:
-	@echo "Smoke tests with Python2"
-	@echo -e "------------------------\n"
+	@printf '------------------------\n'
+	@printf 'Smoke tests with Python2\n'
+	@printf '------------------------\n\n'
 	@$(RUN_TESTS_PY3)
 
 test3:
-	@echo "Smoke tests with Python3"
-	@echo -e "------------------------\n"
+	@printf '------------------------\n'
+	@printf 'Smoke tests with Python3\n'
+	@printf '------------------------\n\n'
 	@$(RUN_TESTS_PY3)
 
 test: test2 test3
