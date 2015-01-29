@@ -14,5 +14,11 @@
 #  |___|    |___|                   |___|   |___|
 #
 
+# >>> import pypropeller
+# >>> kwargs = {"cmd": ["sleep", "1"], "info": "Shell 'sleep 1' in propeller"}
+# >>> p = pypropeller.Propeller(**kwargs)
+# >>> print(p.execute())
+
+
 from . import console
 from .pypropeller import Propeller
