@@ -11,7 +11,7 @@ PACKAGE_DIR := $(REPO_DIR)/build
 RUN_TESTS_PY2 := PYTHONPATH=$(REPO_DIR)/pypropeller $(PYTHON2) $(TEST_DIR)/test_pypropeller.py
 RUN_TESTS_PY3 := PYTHONPATH=$(REPO_DIR)/pypropeller $(PYTHON3) $(TEST_DIR)/test_pypropeller.py
 
-.PHONY: all test2 test3 test build
+.PHONY: all test2 test3 test clear build
 
 all: test
 
@@ -29,6 +29,9 @@ test3:
 
 test: test2 test3
 
-build:
+clear:
+	@rm -rf $(PACKAGE_DIR)
+
+build: clear
 	@$(PYTHON3) setup.py --quiet sdist --dist-dir $(PACKAGE_DIR)
 	@find $(PACKAGE_DIR) -name '*.tar.gz'

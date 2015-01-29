@@ -17,7 +17,8 @@ import datetime
 
 import six
 
-import console
+from . import console
+
 
 UNBUFFERED = os.fdopen(sys.stdout.fileno(), mode="wb", buffering=0)
 
