@@ -8,8 +8,8 @@ REPO_DIR := $(patsubst %/,%,$(dir $(THIS_FILE)))
 TEST_DIR := $(REPO_DIR)/$(PACKAGE)/test
 PACKAGE_DIR := $(REPO_DIR)/build
 
-RUN_TESTS_PY2 := PYTHONPATH=$(REPO_DIR)/pypropeller $(PYTHON2) $(TEST_DIR)/test_pypropeller.py
-RUN_TESTS_PY3 := PYTHONPATH=$(REPO_DIR)/pypropeller $(PYTHON3) $(TEST_DIR)/test_pypropeller.py
+RUN_TESTS_PY2 := PYTHONPATH=$(REPO_DIR)/$(PACKAGE) $(PYTHON2) $(TEST_DIR)/test_$(PACKAGE).py
+RUN_TESTS_PY3 := PYTHONPATH=$(REPO_DIR)/$(PACKAGE) $(PYTHON3) $(TEST_DIR)/test_$(PACKAGE).py
 
 .PHONY: all test2 test3 test clear build
 
