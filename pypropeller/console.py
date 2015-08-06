@@ -27,7 +27,7 @@ def get_terminal_size():
             pass
     if not cr:
         try:
-            cr = (os.env['LINES'], os.env['COLUMNS'])
+            cr = (os.environ['LINES'], os.environ['COLUMNS'])
         except:
             cr = (25, 80)
     return int(cr[1]), int(cr[0])
