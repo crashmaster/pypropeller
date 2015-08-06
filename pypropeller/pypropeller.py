@@ -362,7 +362,7 @@ class Propeller(object):
     def __propeller_print(self, propeller, add_newline=False):
         """Print the propeller! :-)"""
         self.__stdout.write(
-            ("\r%s%s" % (propeller, self.__normalized_desc())).encode("utf-8"))
+            ("\r%s%s" % (propeller, self.__normalized_desc())).encode())
         if add_newline:
             self.__stdout.write(b'\n')
 
