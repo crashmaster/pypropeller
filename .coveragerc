@@ -1,0 +1,16 @@
+[paths]
+source =
+   src/pypropeller
+   */site-packages/pypropeller
+
+[run]
+branch = true
+source =
+    pypropeller
+    tests
+parallel = true
+
+[report]
+show_missing = true
+precision = 2
+omit = *migrations*

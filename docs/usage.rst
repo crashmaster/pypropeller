@@ -1,7 +1,8 @@
-# pypropeller
-Rotating console propeller for running things in background.
+=====
+Usage
+=====
 
-## usage
+To use pypropeller in a project::
 
 ### execute python function with an argument
 ```python

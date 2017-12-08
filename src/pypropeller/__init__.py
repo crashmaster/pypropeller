@@ -19,6 +19,6 @@
 # >>> p = pypropeller.Propeller(**kwargs)
 # >>> print(p.execute())
 
+__version__ = '0.1.0'
 
-from . import console
 from .pypropeller import Propeller

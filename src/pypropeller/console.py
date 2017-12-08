@@ -28,9 +28,10 @@ def get_terminal_size():
     if not cr:
         try:
             cr = (os.environ['LINES'], os.environ['COLUMNS'])
-        except:
+        except KeyError:
             cr = (25, 80)
     return int(cr[1]), int(cr[0])
+
 
 CONSOLE_FONT_ATTRIBUTE = {"NORMAL": 0,
                           "BOLD": 1,
