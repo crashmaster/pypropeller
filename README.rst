@@ -28,10 +28,6 @@ Overview
     :alt: PyPI Package latest release
     :target: https://pypi.python.org/pypi/pypropeller
 
-.. |commits-since| image:: https://img.shields.io/github/commits-since/crashmaster/pypropeller/v0.1.0.svg
-    :alt: Commits since latest release
-    :target: https://github.com/crashmaster/pypropeller/compare/v0.1.0...master
-
 .. |wheel| image:: https://img.shields.io/pypi/wheel/pypropeller.svg
     :alt: PyPI Wheel
     :target: https://pypi.python.org/pypi/pypropeller
@@ -43,6 +39,10 @@ Overview
 .. |supported-implementations| image:: https://img.shields.io/pypi/implementation/pypropeller.svg
     :alt: Supported implementations
     :target: https://pypi.python.org/pypi/pypropeller
+
+.. |commits-since| image:: https://img.shields.io/github/commits-since/crashmaster/pypropeller/v0.1.0.svg
+    :alt: Commits since latest release
+    :target: https://github.com/crashmaster/pypropeller/compare/v0.1.0...master
 
 
 .. end-badges

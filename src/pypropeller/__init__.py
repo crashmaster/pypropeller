@@ -21,4 +21,4 @@
 
 __version__ = '0.1.0'
 
-from .pypropeller import Propeller
+from .pypropeller import Propeller  # noqa
